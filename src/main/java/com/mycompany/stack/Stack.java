@@ -17,14 +17,21 @@ public class Stack {
     private int[] stack = new int[MAXSIZE];
     private int top = -1;
 
-    // Check if the stack is empty
     public boolean isEmpty() {
-        return top == -1;
+        if(top == -1){
+            return true;
+        }else {
+            return false;
+        }
     }
 
     // Check if the stack is full
     public boolean isFull() {
-        return top == MAXSIZE - 1;
+        if(top == MAXSIZE -1){
+           return true; 
+        } else {
+          return false;
+        }
     }
 
     // Peek at the top item of the stack
